@@ -16,7 +16,7 @@ items:
           labels:
             app: configuration-watcher
         spec:
-          serviceAccountName: "configuration-watcher-service"
+          serviceAccountName: configuration-watcher-service
           containers:
           - name: configuration-watcher-container
             image: springcloud/spring-cloud-kubernetes-configuration-watcher:2.0.1-SNAPSHOT

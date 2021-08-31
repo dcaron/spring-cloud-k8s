@@ -24,5 +24,5 @@ items:
       name: cluster-admin
     subjects:
     - kind: ServiceAccount
-      name: configuration-watcher-service
+      name: default
       namespace: config-examples
