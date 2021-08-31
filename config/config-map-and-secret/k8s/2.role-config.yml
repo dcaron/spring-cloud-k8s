@@ -26,3 +26,16 @@ items:
     - kind: ServiceAccount
       name: default
       namespace: config-examples
+
+  - apiVersion: rbac.authorization.k8s.io/v1
+    kind: ClusterRoleBinding
+    metadata:
+      name: admin-a
+    roleRef:
+      apiGroup: rbac.authorization.k8s.io
+      kind: ClusterRole
+      name: cluster-admin
+    subjects:
+      - kind: ServiceAccount
+        name: configuration-watcher-service
+        namespace: config-examples
