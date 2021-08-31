@@ -2,13 +2,10 @@
 apiVersion: v1
 kind: List
 items:
-#  - apiVersion: v1
-#    kind: Namespace
-#    metadata:
-##      creationTimestamp: null
-#      name: config-examples
-#    spec: {}
-#    status: {}
+  - kind: Namespace
+    apiVersion: v1
+    metadata:
+      name: config-examples
   - apiVersion: v1
     kind: ServiceAccount
     metadata:
