@@ -9,12 +9,13 @@ spring:
     kubernetes:
       reload:
         enabled: true
-      config:
-        name: message-service
-        namespace: config-examples
-        sources:
-          # Spring Cloud Kubernetes looks up a ConfigMap named message-service in namespace config-examples
-          - name: message-service
+#        mode: event
+#      config:
+#        name: message-service
+#        namespace: config-examples
+#        sources:
+#          # Spring Cloud Kubernetes looks up a ConfigMap named message-service in namespace config-examples
+#          - name: message-service
 
 # expose all the spring boot actuators good for demos.
 # NEVER DO THIS in production
