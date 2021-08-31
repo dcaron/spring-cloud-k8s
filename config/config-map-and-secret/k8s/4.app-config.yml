@@ -38,7 +38,7 @@ items:
             - name: demo-config-volume
               configMap:
                 name: demo-configmap
-          serviceAccountName: "default"
+          serviceAccountName: "configuration-watcher-service"
           containers:
             - image: "config-map-and-secret:0.0.1-SNAPSHOT"
               imagePullPolicy: IfNotPresent
